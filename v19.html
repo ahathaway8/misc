@@ -1,0 +1,1177 @@
+<!--
+    Styles and scripts need to be IN THE CMS in order for both mobile and desktop views to be similar.
+    Doing so prevents from having to make duplicate copies of scss and js and redeploying them each time.
+    This template is responsive.
+    - Ashley Hathaway 3.26.14
+-->
+
+<style>
+/* ================= for MOBILE view ================== */
+@media screen and (max-width: 459px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+        width: 100%;
+    }
+    img.mobile {
+        margin-bottom: 15px;
+    }
+    .slides-navigation a.prev {
+      left: 35px;
+    }
+    .slides-navigation a.next {
+      right: 35px;
+    }
+    .headBucket>div {
+        margin-top: 20px;
+    }
+    ul.stickyLinks {
+        display: none;
+    }
+    ul.stickyLinks li {
+        width: 100%;
+        margin: 0px;
+        padding: 5px;
+    }
+    ul.stickyLinks li a {
+        font-size: 16px;
+        display: block;
+        border: none;
+    }
+    #fashionableDesign,#drivenToSucceed2,#getInGear {
+        padding-top: 30px;
+    }
+    #fashionableDesign {
+        min-height: 1000px;
+    }
+    .headBucket {
+        margin: 0px auto;
+        position: relative;
+        max-width: 527px;
+    }
+    .headBucket>div {
+      margin-top: 20px;
+      height: 425px;
+    }
+    .headBucket:first-child .captionWrapper {
+        top: 200px;
+    }
+    .headBucket:last-child .captionWrapper {
+        top: 200px;
+    }
+    .headBucket h4 {
+        margin-top: 15px;
+    }
+    .head0 {
+        font-size: 30px;
+        padding: 30px;
+        line-height: 35px;
+    }
+    .head1 {
+        font-size: 45px;
+        padding: 0px 10px;
+    }
+    h5 {
+        font-size: 9px;
+    }
+    .padTop {
+        padding-top: 50px;
+    }
+    .descrip {
+        top: 260px;
+        font-size: 16px;
+        padding: 0px 25px;
+    }
+    #drivenToSucceed2>div.bucket {
+        min-height: 550px;
+    }
+    #drivenToSucceed2>div.tall {
+        min-height: 600px;
+    }
+    .dresses_6up {
+        margin: 15px auto;
+    }
+    .dresses_3up {
+        margin: 30px auto;
+    }
+    .captionWrapper {
+        font-size: 9px;
+        top: 200px;
+    }
+    .rotating_captionWrapper {
+      top: 225px;
+      font-size: 9px;
+    }
+    .rotating_item2 li img {
+        width: 400px;
+    }
+    .guarantee-block {
+        height: 300px;
+    }
+    .guarantee-title {
+        padding: 0px;
+        margin: 0px;
+    }
+    .bucket ul {
+        margin-top: 25px;
+        padding: 0px 25px;
+    }
+    .bucket ul li {
+      line-height: 20px;
+    }
+    .section {
+        padding: 0px 15px;
+    }
+    .smallType {
+        padding: 30px 15px;
+    }
+}
+
+/* ================= for DESKTOP view ================== */
+@media screen and (min-width: 460px) {
+    .desktop {
+        display: block;
+    }
+    #outer .mobile {
+        display: none;
+    }
+    .mobile {
+        display: none;
+    }
+    .slides-navigation a.prev {
+      left: 100px;
+    }
+    .slides-navigation a.next {
+      right: 100px;
+    }
+    ul.stickyLinks {
+        padding: 20px 0px;
+    }
+    ul.stickyLinks li {
+        padding: 0px 35px;
+        border-right: 1px solid #c0c0c0;
+        display: inline-block;
+    }
+    ul.stickyLinks li a {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    .headBucket {
+        float: left;
+        max-width: 527px;
+    }
+    .headBucket>div {
+        margin-top: 40px;
+    }
+    .headBucket:last-child {
+        margin-left: 20px;
+    }
+    #fashionableDesign {
+        min-height: 680px;
+    }
+    .head0 {
+        font-size: 42px;
+        padding: 30px 80px;
+        line-height: 50px;
+    }
+    .head1 {
+        font-size: 62px;
+        padding: 20px 0px 0px 0px;
+    }
+    h5 {
+        font-size: 10px;
+    }
+    .padTop {
+        padding-top: 55px;
+    }
+    .tall {
+        min-height: 540px;
+    }
+    .captionWrapper {
+        top: 335px;
+    }
+    .rotating_captionWrapper {
+        top: 295px;
+    }
+    .captionWrapper,.rotating_captionWrapper {
+        font-size: 12px;
+    }
+    .descrip {
+        top: 315px;
+        font-size:14px;
+        padding: 0px 43px;
+    }
+    .bucket>div {
+        max-width: 470px;
+    }
+    #drivenToSucceed2>div.bucket {
+        max-width: 1005px;
+        min-height: 300px;
+        padding: 50px 0px 80px 0px;
+    }
+    .dresses_3up {
+        display: none;
+        height: 318px;
+    }
+    .dresses_6up {
+        margin: 50px auto;
+        height: 385px;
+    }
+    #fashionableDesign,#drivenToSucceed2 {
+        padding: 30px;
+    }
+    #getInGear {
+        padding: 30px 0px;
+    }
+    .guarantees {
+      width: 1135px;
+    }
+    .guarantee-title {
+        padding-top: 5px;
+        margin-bottom: 5px;
+    }
+    .bucket ul {
+        margin-top: 15px;
+        padding: 0px 75px;
+    }
+    .bucket ul li {
+      line-height: 20px;
+    }
+    .smallType {
+        padding: 25px 0px;
+    }
+}
+
+.white {
+    color: #FFFFFF;
+}
+.bold {
+    font-family: "ProximaNova-Bold", sans-serif;
+}
+sup {
+    font-size: 8px;
+}
+.head0 {
+    font-family: "FreightDispProLight-Regular", serif;
+    -webkit-font-smoothing: antialiased;
+    color: #6b6969;
+    text-align: center;
+    display: block;
+}
+.head0_italic {
+    font-family: "FreightDispProLight-Italic", serif;
+    -webkit-font-smoothing: antialiased;
+}
+.head1 {
+    font-family: "RamaGothicE-Thin", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #000000;
+    text-align: center;
+    margin: 10px auto;
+    display: block;
+}
+.head2 {
+    display: block;
+    text-align: center;
+    color: #000000;
+    font-size: 28px;
+    padding: 20px 100px;
+}
+.head3 {
+    font-family: "RamaGothicE-Thin", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 62px;
+    color: #000000;
+    text-align: center;
+    margin: 30px auto 0px auto;
+    display: block;
+    padding: 0px;
+}
+.heading4:hover {
+    color: #d90077;
+}
+.heading4 {
+    font-family: "RamaGothicE-Thin", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 40px;
+    line-height: 40px;
+}
+.h3_italic {
+    font-family: "FreightDispProLight-Italic",Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.h3_bold {
+    font-family: "ProximaNova-Bold",Arial,sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+.heading4,h5 {
+    display: block;
+    color: #000000;
+    text-align: center;
+}
+#fashionableDesign h4 {
+    display: block;
+    padding: 25px 0px 15px 0px;
+    font-family: "ProximaNova-Regular",Arial,sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
+h5 {
+    text-transform: uppercase;
+    font-family: 'ProximaNova-Regular', Arial, sans-serif;
+    color: #6b6969;
+    letter-spacing: 0.2em;
+}
+h6 {
+    font-family: "ProximaNova-Regular", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+.h7 {
+    font-family: "RamaGothicE-Thin", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 30px;
+    color: #d90077;
+    margin: 15px auto;
+}
+.head1_wht {
+    font-family: "RamaGothicE-Thin", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 42px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.smallType {
+    max-width: 1116px;
+    font-family: "ProximaNova-Regular",Arial,sans-serif;
+    font-size: 10px;
+    color: #878787;
+    text-align: left;
+}
+.smallType>div:first-child {
+    margin: 25px auto 15px 0px;
+}
+.smallType>div {
+    margin-left: 15px;
+}
+.smallType>div>div {
+    margin-bottom: 10px;
+    line-height: 18px;
+}
+#page-content {
+    font-family: "ProximaNova-Regular",Arial,sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    min-height: 700px;
+    margin: 0px auto;
+}
+.section {
+    margin: 0px auto;
+    position: relative;
+    max-width: 1140px;
+}
+.hide {
+    opacity: 0;
+}
+.btn_flatWrapper {
+    margin: 0px auto;
+    text-align: center;
+}
+.btn_flat {
+    line-height: 40px;
+    height: 40px;
+    padding: 0px 30px;
+    font-size: 14px;
+    color: white;
+    background-color: #d60076;
+    display: inline-block;
+    border: medium none;
+    cursor: pointer;
+    font-family: "ProximaNova-Regular",Arial,sans-serif;
+    outline: medium none;
+    text-align: center;
+    text-decoration: none;
+}
+a.btn_flat:hover {
+    color: #FFFFFF;
+    text-shadow: 0px 0px 3px #9e0039;
+}
+.floatingHeader {
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+    z-index: 100;
+    width: 100%;
+    padding: 20px 0px;
+    background-color: #f3f3f5;
+    margin: 0px auto 25px auto;
+}
+.stickyLinksWrapper {
+    text-align: center;
+    width: 100%;
+    margin: 0px auto 25px auto;
+}
+ul.stickyLinks {
+    background-color: #f3f3f5;
+}
+.stickyLinks li {
+    list-style-type: none;
+}
+.stickyLinks li:last-child {
+    padding-right: 0px;
+    border-right: none;
+}
+.stickyLinks li a {
+    font-family: "ProximaNova-Semibold", sans-serif;
+    letter-spacing: 0.0625em;
+    color: #6b6969;
+    text-decoration: none;
+}
+.stickyLinks li a:hover,.guarantee-text>a:hover {
+    color: #d90077;
+}
+#fashionableDesign {
+    margin: 0px auto;
+    border-bottom: 1px solid #f2f2f5;
+}
+.headBucket {
+    position: relative;
+}
+.slideshow li {
+    width: 1652px;
+}
+.headBucket h4 {
+    margin: 0px auto;
+}
+.descrip {
+    display: block;
+    font-family: "ProximaNova-Regular",Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0px auto;
+    line-height: 20px;
+    text-align: center;
+}
+.rotating_item-wrapper {
+    max-width: 527px;
+    height: 294px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.rotating_item2 {
+    min-width: 527px;
+    height: 294px;
+    text-align: left;
+    position: absolute;
+    left: 0px;
+}
+.rotating_item2 ul {
+    position: relative;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.rotating_item2 ul li {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.rotating_caption {
+    min-width: 527px;
+    text-align: left;
+    position: absolute;
+}
+.captionWrapper {
+    min-width: 527px;
+    position: absolute;
+    height: 15px;
+}
+.headBucket .caption,.headBucket .rotating_caption {
+    font-family: "ProximaNova-Regular", Arial, sans-serif;
+    text-align: left;
+    color: #6b6969;
+}
+#fusionWrapper {
+    margin: 40px auto 75px;
+}
+.dresses_6up {
+    width: 945px;
+    list-style-type: none;
+}
+.dresses_6up li {
+    float: left;
+}
+.dresses_6up img {
+    width: 157px;
+    height: 385px;
+    outline: none;
+    border: 0;
+}
+#drivenToSucceed2 {
+    background-color: #f3f3f5;
+    position: relative;
+    margin: 50px auto 0px auto;
+}
+#drivenToSucceed2>div.bucket {
+    border-bottom: 1px solid #e1e1e1;
+}
+#drivenToSucceed2>div:first-child,#drivenToSucceed2>div:last-child {
+    border-bottom: 0;
+}
+#drivenToSucceed2 a {
+    text-decoration: none;
+}
+.bucket>a>img,.bucket>img {
+    float: left;
+}
+.bucket>div {
+    float: left;
+    text-align: center;
+}
+.bucket>div:nth-child(2n+1) {
+    margin: 0px auto;
+}
+.bucket img.logo {
+    width: 184px;
+    display: block;
+    margin: 0px auto 15px auto;
+}
+.bucket ul {
+    list-style-type: disc;
+    text-decoration: left;
+    text-align: left;
+}
+.bucket ul li {
+    margin-bottom: 20px;
+    font-family: "ProximaNova-Regular", Arial, sans-serif;
+    font-size: 13px;
+    color: #6b6969;
+}
+#getInGear {
+    padding-bottom: 50px;
+}
+   
+.guarantees {
+    text-align: center;
+    padding-top: 30px;
+}
+.guarantee-block {
+    display: inline-block;
+    vertical-align: top;
+    color: #6b6969;
+}
+.guarantee-block img {
+    width: 274px;
+    height: 119px;
+    margin-bottom: 25px;
+}
+.guarantee-title {
+    display: block;
+    font-family: "ProximaNova-Bold",Arial,sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.0625em;
+}
+.guarantee-text {
+    display: block;
+    padding-top: 10px;
+    font-family: "ProximaNova-Regular",Arial,sans-serif;
+    font-size: 13px;
+    width: 220px;
+    margin: 0px auto;
+    line-height: 20px;
+}
+
+.guarantee-text>a {
+    color: #6b6969;
+    font-family: "ProximaNova-Semibold",Arial,sans-serif;
+    text-decoration: underline;
+}
+.guarantee-text-2 {
+     display: block;
+    padding-top: 10px;
+    font-family: "ProximaNova-Regular",Arial,sans-serif;
+    font-size: 13px;
+    margin: 0px auto;
+    line-height: 20px;
+    width: 245px;
+}
+#upcomingEvents {
+    padding: 50px 0px 75px 0px;
+    background-color: #82909e;
+}
+#upcomingEvents div.descrip {
+    font-family: "FreightDispProLight-Italic",Times,serif;
+    -webkit-font-smoothing: antialiased;
+}
+#upcomingEvents div:last-child {
+    letter-spacing: 0.0625em;
+}
+
+#slides {
+  position: relative;
+ height:652px;
+}
+/*#slides .slides-container {
+  display: none;
+}*/
+#slides .scrollable {
+  *zoom: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+}
+#slides .scrollable:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.slides-navigation {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 3;
+  top: 46%;
+  width: 100%;
+  height: 50px;
+}
+.slides-navigation a {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+.slides-navigation a.prev {
+  background: url("https://cdn.rtrcdn.com/sites/default/files/images/lookbooks/fall2013/fall2013lookbook_icons_no_shadow.png") 0px -50px;
+}
+.slides-navigation a.prev:hover {
+  background: url("https://cdn.rtrcdn.com/sites/default/files/images/lookbooks/fall2013/fall2013lookbook_icons_no_shadow.png") -50px -50px;
+}
+.slides-navigation a.next {
+  background: url("http://cdn.rtrcdn.com/sites/default/files/images/lookbooks/fall2013/fall2013lookbook_icons_no_shadow.png") -50px 0px;
+}
+.slides-navigation a.next:hover {
+  background: url("https://cdn.rtrcdn.com/sites/default/files/images/lookbooks/fall2013/fall2013lookbook_icons_no_shadow.png") 0px 0px;
+}
+.slides-pagination {
+  position: absolute;
+  z-index: 3;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+.slides-pagination a {
+  border: 1px solid #FFF;
+  border-radius: 15px;
+  width: 10px;
+  height: 10px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=");
+  margin: 2px;
+  overflow: hidden;
+  text-indent: -150%;
+}
+.slides-pagination a.current {
+  background: #FFF;
+}
+a.rsvp {
+    text-decoration: none;
+    display: block;
+    width: 38px; 
+    height: 18px; 
+    margin: 20px auto;
+}
+    a.rsvp span {
+        text-decoration: none;
+        font-weight: bold; 
+        color: #000001;
+        margin: 15px auto 10px auto;
+        border-bottom: 1px solid #000;
+        padding-bottom: 1px;
+    }
+a.rsvp span:hover {
+    text-decoration: none;
+    color: #FFF;
+    border-bottom: 1px solid #FFF;
+    padding-bottom: 1px;
+}
+.descrip {
+    font-family: "ProximaNova-Regular",Arial,sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 25px auto;
+    letter-spacing: 0.0635em;
+}
+.prox {
+    font-family: "FreightDispProLight-Italic",Arial,sans-serif;
+    font-size: 20px;
+}
+.event_wrapper {
+    width: 570px;
+    height: 100px;
+    margin: 35px auto 0px auto;
+}
+.vertical_line {
+    width: 1px;
+    height: 60px;
+    background-color: #acacac;
+    float: left; 
+    margin: 20px 35px 0px 35px;
+}
+
+.youtube_slide {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 75%;
+    background-color: rgb(130, 144, 158);
+}
+.youtube_slide .outerWrapper {
+    margin: 0px auto;
+    position: absolute;
+    z-index: 3;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+    background-color: #FFF;
+}
+.youtube_slide .hero_head1 {
+    color: #6B6969;
+    display: block;
+    font-family: "ProximaNova-Bold",Arial,sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.0625em;
+    padding-top: 35px;
+    text-align: center;
+}
+.youtube_slide .hero_head3 {
+    font-family: "RamaGothicE-Thin",Arial,sans-serif;
+    font-size: 62px;
+    color: #000;
+    text-align: center;
+}
+.youtube_slide .btn_flat {
+    margin: 15px auto; 
+    display: block;
+    width: 100px;
+    font-size: 14px;
+}
+.video {
+    width: 640px;
+    height: 360px;
+    margin: 25px auto;
+}
+
+</style>
+
+<div id="fordfusion">
+  <div id="slides">
+    <div class="slides-container">
+      
+       <!-- Slide 1 -->
+        <a href="http://www.testdrivestyle.com" target="_blank">
+            <img class="desktop" src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/Car_opener1.jpg" width="1500" height="652" alt="RTR and Ford Fusion">
+            <img class="mobile" src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/Car_opener1_mobile_c.jpg" alt="RTR and Ford Fusion" />
+        </a>
+          
+        <!-- Slide 2 -->
+        <a href="http://www.testdrivestyle.com" target="_blank">
+            <img src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/Sweeps_opener2.jpg" width="1500" height="652" alt="RTR and Ford Fusion">
+             <img class="mobile" src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/sweeps_mobile.jpg" alt="Second slide" />
+        </a>
+
+        <!-- Slide 3 -->
+        <div class="youtube_slide">
+            <div class="outerWrapper">
+                <div class="hero_head1">RENT THE RUNWAY & FORD FUSION PRESENT</div>
+                <div class="hero_head3">GIRL-ON-THE-GO</div>
+                <iframe class="desktop video" name="video" src="https://www.youtube.com/embed/Xp3q0EfzcJg?version=3&vq=hd720" frameborder="0" allowfullscreen></iframe>
+                <a class="btn_flat" href="https://www.renttherunway.com/shortlist/5362625b0cf2a6e4fd06f20f?nav_location=icon&action=share_shortlist&object_type=shortlist" target="_blank" style="">Shop the Video</a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="slides-navigation">
+      <a href="#" class="next"></a>
+      <a href="#" class="prev"></a>
+    </nav>
+
+  </div>
+
+  <!-- START: Anchor/Stinky Link Bar -->
+  <div class="stickyLinksWrapper persist-area2">
+    <ul class="stickyLinks persist-header2">
+      <li><a href="#fashionableDesign" title="FASHIONABLE DESIGN">FASHIONABLE DESIGN</a></li>
+      <li><a href="#drivenToSucceed2" title="DRIVEN TO SUCCEED">DRIVEN TO SUCCEED</a></li>
+      <li><a href="http://www.testdrivestyle.com/" target="_blank" title="WIN A FORD FUSION">WIN A FORD FUSION</a></li>
+      <li><a href="#getInGear" title="GET IN GEAR">GET IN GEAR</a></li>
+      <li><a href="#upcomingEvents" title="EVENTS">EVENTS</a></li>
+    </ul>
+
+    <!-- START: SECTION Fashionable Design -->  
+    <div id="fashionableDesign" class="section">
+      <div class="head1">FASHIONABLE DESIGN</div>
+      <div class="headBucket">
+        <div>
+          <!-- image to display on desktop -->
+          <img class="desktop" src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/anthony_prozzi.jpg" alt="Ford Interior Designer Anthony Prozzi"/>
+          <!-- image to display on mobile -->
+          <img class="mobile" src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/anthony_prozzi_mobile_b.jpg" alt="Ford Interior Designer Anthony Prozzi"/>
+          <div class="captionWrapper">
+              <div class="caption">Anthony Prozzi</div>
+          </div>
+          <div class="descrip" style="position: relative; top: 0px;">
+            <h4>THE DESIGNER</h4>
+            Ford Interior Designer <span class="bold">Anthony Prozzi</span> brings a fresh perspective to car design. A native of Brooklyn, NY, he studied design at Pratt Institute School of Art & Design and worked for designer Donna Karan.
+          </div>
+        </div>
+      </div>
+      <div class="headBucket">
+        <div class="rotating_item2">
+          <!-- images to display on desktop -->
+          <ul class="desktop">  
+            <li><img src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/interior.jpg" alt="Inspiration behind Anthony Prozzi" /></li>
+            <li><img src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/inspiration.jpg" alt="Inspiration behind Anthony Prozzi"/></li>
+          </ul>
+          <!-- images to display on mobile -->
+          <ul class="mobile">
+            <li><img src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/interior_mobile.jpg" alt="Inspiration behind Anthony Prozzi" /></li>
+            <li><img src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/inspiration_mobile.jpg" alt="Inspiration behind Anthony Prozzi"/></li>
+          </ul>
+        </div>
+        <div class="rotating_captionWrapper" style="position: absolute;">
+          <div class="rotating_caption hide">The 2014 Ford Fusion Interior</div>
+          <div class="rotating_caption">From left to right: Alexander McQueen runway, Kate Lanphear, Eddie Borgo jewelry</div>
+        </div>
+        <div class="descrip" style="position: relative;">
+          <h4>THE INSPIRATION</h4>
+          Anthony Prozzi cites Alexander McQueen, <span class="italic">Elle</span> magazine style director Kate Lanphear and jewelry designer Eddie Borgo as his inspirations. The car's chrome accents reflect these strong, edgy muses.  
+        </div>
+      </div>
+    </div>
+    <!-- END: Section -->
+
+    <!-- START: Section -->
+    <div id="fusionWrapper" class="section"> 
+      <div class="head0">"The Fusion is beautiful and conscientious without sacrificing a <span class="head0_italic">modern edge</span>, much like today's woman."</div> 
+      <h5>ford interior designer Anthony Prozzi</h5> 
+      <ul class="dresses_6up desktop">
+        <li><img src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/dress_01.png" alt="" /></li>
+        <li><img src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/dress_02.png" alt="" /></li>
+        <li><img src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/dress_03.png" alt="" /></li>
+        <li><img src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/dress_04.png" alt="" /></li>
+        <li><img src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/dress_05.png" alt="" /></li>
+        <li><img src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/dress_06.png" alt="" /></li>
+      </ul>
+      <div class="dresses_3up mobile"><img src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/dresses_mobile_d.png" /></div> 
+      <a class="btn_flat" href="https://www.renttherunway.com/shortlist/52f41d3d0cf2776f9e7b03a2" target="_blank">Browse Prozzi's Picks</a>
+    </div>
+    <!-- END: Section -->
+
+    <!-- START: Section -->
+    <div id="drivenToSucceed2">
+      <div class="head1">DRIVEN TO SUCCEED: What's Your Style?</div>    
+      <!-- START: Body Content -->
+      <div class="bucket section tall">
+        <a href="http://www.ford.com/cars/fusion/trim/titanium/?fmccmp=140212-bca-renttherunway2014" target="_blank" title="Ford Fusion Titanium">
+          <img class="desktop" src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/classic.png" alt="CLASSIC Ford Fusion" />
+          <img class="mobile" src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/classic_mobile_b.png" alt="CLASSIC Ford Fusion" />
+        </a>
+        <div>
+          <a href="http://www.ford.com/cars/fusion/trim/titanium/?fmccmp=140212-bca-renttherunway2014" target="_blank" title="Ford Fusion Titanium">
+            <div class="heading4">CLASSIC</div>
+            <h6>2014 FORD FUSION</h6>
+            <ul>
+              <li>The 1.6L EcoBoost<sup>®</sup> has an EPA-estimated rating of 37 highway miles per gallon<sup>1</sup></li>
+              <li>Turbocharged EcoBoost engines give you extra power<sup>2</sup></li>
+            </ul>
+            </a>
+          <div class="h7">WIN THIS CAR + $1,000 TO RTR!</div>
+          <a href="http://www.testdrivestyle.com?fmccmp=140212-bca-renttherunway2014" target="_blank" title="Enter to Win"><div class="btn_flat">Enter Now</div></a>
+        </div>
+      </div>
+      <!-- END: Body Content -->
+
+
+        <!-- START: Body Content -->
+        <div class="bucket section">            
+        <div class="padTop">
+            <a href="http://www.ford.com/cars/fusion/trim/shybrid/?fmccmp=140212-bca-renttherunway2014" target="_blank" title="Ford Fusion Hybrid">
+                <div class="heading4">ECO-CHIC</div>
+                <h6><img class="logo" src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/ford_fusion_hybrid_logo.png" /></h6>
+                <ul>
+                    <li>Fusion Hybrid has a state-of-the-art lithium battery, along with a gas-powered engine</li>
+                    <li>A look of distinction with a bold grille and a sleek silhouette</li>
+                </ul>
+            </a>
+        </div>
+        <a href="http://www.ford.com/cars/fusion/trim/shybrid/?fmccmp=140212-bca-renttherunway2014" target="_blank" title="Ford Fusion Hybrid">
+            <img class="desktop" src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/eco-chic.png" alt="ECO-CHIC Fusion Hybrid" />
+            <img class="mobile" src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/eco-chic.png" alt="ECO-CHIC Fusion Hybrid" />
+        </a>
+        </div>
+        <!-- END: Body Content -->
+
+
+
+      <!-- START: Body Content -->
+      <div class="bucket section">
+        <a href="http://www.ford.com/cars/fusion/trim/titaniumenergi/?fmccmp=140212-bca-renttherunway2014" target="_blank" title="Ford Fusion Energi">
+          <img class="desktop" src="http://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/edgy.png" target="_blank" alt="EDGY Fusion Energi" />
+          <img class="mobile" src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/edgy.png" target="_blank" alt="EDGY Fusion Energi" />
+        </a>
+        <div class="padTop">
+          <a href="http://www.ford.com/cars/fusion/trim/titaniumenergi/?fmccmp=140212-bca-renttherunway2014" target="_blank" title="Ford Fusion Energi">
+            <div class="heading4">EDGY</div>
+            <h6><img class="logo" src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/ford_fusion_energi_logo.png" /></h6>
+            <ul>
+              <li>This plug-in hybrid can travel up to 85 mph in all-electric mode</li>
+              <li>The choice to plug in or not is yours. The standard 120V convenience charge cord allows you to fully charge your Fusion Energi in about 7 hours.</li>
+            </ul>
+          </a>
+        </div>
+      </div>
+      <!-- END: Body Content -->
+    </div>
+    <!-- END: Section -->
+
+    <!-- SECTION: Get In Gear -->
+    <div id="getInGear" class="section">
+      <div class="head3">GET IN GEAR</div>
+      <div class="h3_italic">Life as a girl-on-the-go just got easier</div>
+      
+      <iframe class="video" name="video" src="https://www.youtube.com/embed/x9xRBtx2q6U?version=3&vq=hd720" frameborder="0" allowfullscreen></iframe>
+
+
+      <div class="guarantees">
+        <div class="guarantee-block">
+          <img src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/features1.jpg"/>
+          <div class="guarantee-title">PARALLEL PERFECTION</div>
+          <div class="guarantee-text">
+            Available <a href="http://www.ford.com/cars/fusion/features/?fmccmp=140212-bca-renttherunway2014#page=Feature14" target="_blank">active park assist</a> is designed to help make parallel parking a breeze.<sup>3</sup>
+          </div>
+        </div>
+        <div class="guarantee-block">
+          <img src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/features2.jpg"/>
+          <div class="guarantee-title">RADAR SENSORS</div>
+          <div class="guarantee-text">
+           <a href="http://www.ford.com/cars/fusion/features/?fmccmp=140212-bca-renttherunway2014#page=Feature10" target="_blank">BLIS</a><sup>®</sup> (Blind Spot Information System) with cross-traffic alert helps make driving more convenient.<sup>3</sup>
+          </div>          
+        </div>
+          <div class="guarantee-block">
+          <img src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/features3.jpg"/>
+          <div class="guarantee-title">HANDS-FREE</div>
+          <div class="guarantee-text">
+           Available <a href="http://www.ford.com/cars/fusion/features/?fmccmp=140212-bca-renttherunway2014#page=Feature8" target="_blank">SYNC® with MyFord Touch</a><sup>®</sup> allows you to answer your phone by pushing a button.<sup>4</sup>
+          </div>
+        </div>
+        <div class="guarantee-block">
+          <img src="https://cdn.rtrcdn.com/sites/default/files/featured/partnerships/ford/features4.jpg"/>
+          <div class="guarantee-title">MOOD LIGHTING</div>
+          <div class="guarantee-text">
+            Choose from seven colors to illuminate the interior to match your mood with available <a href="http://www.ford.com/cars/fusion/features/?fmccmp=140212-bca-renttherunway2014#page=Feature25" target="_blank">ambient lighting</a>.
+          </div>            
+        </div>
+      </div>
+    </div>
+
+    <style>
+
+
+    </style>
+
+
+    <!-- START: Section -->
+    <div id="upcomingEvents" class="white">
+        <div class="head1_wht">FORD FUSION STYLE EVENTS</div>
+        <div class="descrip prox">
+            Take a seat in the 2014 Ford Fusion<br>
+            Try on dresses and accessories by your favorite designers<br>
+            Get a 5-minute manicure
+        </div>
+        <div class="event_wrapper">
+            <div class="guarantee-text-2" style="float: left;">
+                NYC Ford Fusion Style Lounge<br>
+                Columbus Circle<br>
+                Thursday, May 8<br>
+                12pm – 6pm<br>
+                <a href="https://www.facebook.com/events/299901736834871/?ref=22" target="_blank" class="rsvp">
+                    <span>
+                        RSVP
+                    </span>
+                </a>
+            </div>
+            <div style="" class="vertical_line"></div>
+            <div class="guarantee-text-2" style="float: left;">
+                LA Ford Fusion Style Lounge<br>
+                The Americana at Brand in Glendale<br>
+                Saturday, May 17<br>
+                12pm – 6pm<br>
+                <a href="https://www.facebook.com/events/632297960158831/?context=create&source=49" target="_blank" class="rsvp" title="Come On By!">
+                    <span>
+                        RSVP
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- END: Section -->
+
+    <!-- START: Section -->
+    <div class="smallType section">
+      <div>
+        <div><sup>1</sup> EPA – estimated rating of 25 city/37 hwy/29 combined MPG, 1.6L EcoBoost<sup>®</sup> 1-4 manual transmission. Actual mileage will vary.</div>
+        <div><sup>2</sup> 1.6L EcoBoost with manual transmission, 182 horsepower, 184 lb. of torque. Figures achieved with premium fuel.</div>
+        <div><sup>3</sup> Driver assist features are supplemental and do not replace the driver's judgment.</div>
+        <div><sup>4</sup> Available feature. Driving while distracted can result in loss of vehicle control. Only use SYNC/MyFordTouch/other devices, even with voice commands, when it is safe to do so. Some features may be locked out while the vehicle is in gear. Not all features are compatible with all phones.</div>
+      </div>
+    </div>
+    <!-- END: Section -->
+
+  </div><!-- END: sticky banner persist area -->
+
+</div><!-- END: fordfusion -->
+
+<script defer="defer">
+
+
+
+
+
+  window.onload = (function() {
+        $(function() {
+
+      /*
+      jquery.animate-enhanced plugin v1.02
+      ---
+      http://github.com/benbarnett/jQuery-Animate-Enhanced
+      http://benbarnett.net
+      @benpbarnett
+      */
+      (function(d,J,K){function P(a,b,d,l,j,h,c,n,q){var t=!1;c=!0===c&&!0===n;b=b||{};b.original||(b.original={},t=!0);b.properties=b.properties||{};b.secondary=b.secondary||{};n=b.meta;for(var k=b.original,x=b.properties,Q=b.secondary,D=r.length-1;0<=D;D--){var F=r[D]+"transition-property",y=r[D]+"transition-duration",e=r[D]+"transition-timing-function";d=c?r[D]+"transform":d;t&&(k[F]=a.css(F)||"",k[y]=a.css(y)||"",k[e]=a.css(e)||"");Q[d]=c?!0===q||!0===G&&!1!==q&&L?"translate3d("+n.left+"px, "+n.top+
+      "px, 0)":"translate("+n.left+"px,"+n.top+"px)":h;x[F]=(x[F]?x[F]+",":"")+d;x[y]=(x[y]?x[y]+",":"")+l+"ms";x[e]=(x[e]?x[e]+",":"")+j}return b}function B(a){for(var b in a)return!1;return!0}function R(a){a=a.toUpperCase();var b={LI:"list-item",TR:"table-row",TD:"table-cell",TH:"table-cell",CAPTION:"table-caption",COL:"table-column",COLGROUP:"table-column-group",TFOOT:"table-footer-group",THEAD:"table-header-group",TBODY:"table-row-group"};return"string"==typeof b[a]?b[a]:"block"}function H(a){return parseFloat(a.replace(a.match(/\D+$/),
+      ""))}function M(a){var b=!0;a.each(function(a,d){return b=b&&d.ownerDocument});return b}var S="top right bottom left opacity height width".split(" "),I=["top","right","bottom","left"],r=["-webkit-","-moz-","-o-",""],T=["avoidTransforms","useTranslate3d","leaveTransforms"],U=/^([+-]=)?([\d+-.]+)(.*)$/,V=/([A-Z])/g,W={secondary:{},meta:{top:0,right:0,bottom:0,left:0}},N=null,C=!1,z=(document.body||document.documentElement).style,O=void 0!==z.WebkitTransition||void 0!==z.MozTransition||void 0!==z.OTransition||
+      void 0!==z.transition,L="WebKitCSSMatrix"in window&&"m11"in new WebKitCSSMatrix,G=L;d.expr&&d.expr.filters&&(N=d.expr.filters.animated,d.expr.filters.animated=function(a){return d(a).data("events")&&d(a).data("events")["webkitTransitionEnd oTransitionEnd transitionend"]?!0:N.call(this,a)});d.extend({toggle3DByDefault:function(){return G=!G},toggleDisabledByDefault:function(){return C=!C},setDisabledByDefault:function(a){return C=a}});d.fn.translation=function(){if(!this[0])return null;var a=window.getComputedStyle(this[0],
+      null),d={x:0,y:0};if(a)for(var p=r.length-1;0<=p;p--){var l=a.getPropertyValue(r[p]+"transform");if(l&&/matrix/i.test(l)){a=l.replace(/^matrix\(/i,"").split(/, |\)$/g);d={x:parseInt(a[4],10),y:parseInt(a[5],10)};break}}return d};d.fn.animate=function(a,b,p,l){a=a||{};var j=!("undefined"!==typeof a.bottom||"undefined"!==typeof a.right),h=d.speed(b,p,l),c=this,n=0,q=function(){n--;0===n&&"function"===typeof h.complete&&h.complete.apply(c,arguments)},t;if(!(t=!0===("undefined"!==typeof a.avoidCSSTransitions?
+      a.avoidCSSTransitions:C)))if(!(t=!O))if(!(t=B(a))){var k;a:{for(k in a)if(("width"==k||"height"==k)&&("show"==a[k]||"hide"==a[k]||"toggle"==a[k])){k=!0;break a}k=!1}t=k||0>=h.duration}return t?J.apply(this,arguments):this[!0===h.queue?"queue":"each"](function(){var b=d(this),c=d.extend({},h),l=function(c){var g=b.data("jQe")||{original:{}},f={};if(2==c.eventPhase){if(!0!==a.leaveTransforms){for(c=r.length-1;0<=c;c--)f[r[c]+"transform"]="";if(j&&"undefined"!==typeof g.meta){c=0;for(var e;e=I[c];++c)f[e]=
+      g.meta[e+"_o"]+"px",d(this).css(e,f[e])}}b.unbind("webkitTransitionEnd oTransitionEnd transitionend").css(g.original).css(f).data("jQe",null);"hide"===a.opacity&&b.css({display:"none",opacity:""});q.call(this)}},k={bounce:"cubic-bezier(0.0, 0.35, .5, 1.3)",linear:"linear",swing:"ease-in-out",easeInQuad:"cubic-bezier(0.550, 0.085, 0.680, 0.530)",easeInCubic:"cubic-bezier(0.550, 0.055, 0.675, 0.190)",easeInQuart:"cubic-bezier(0.895, 0.030, 0.685, 0.220)",easeInQuint:"cubic-bezier(0.755, 0.050, 0.855, 0.060)",
+      easeInSine:"cubic-bezier(0.470, 0.000, 0.745, 0.715)",easeInExpo:"cubic-bezier(0.950, 0.050, 0.795, 0.035)",easeInCirc:"cubic-bezier(0.600, 0.040, 0.980, 0.335)",easeInBack:"cubic-bezier(0.600, -0.280, 0.735, 0.045)",easeOutQuad:"cubic-bezier(0.250, 0.460, 0.450, 0.940)",easeOutCubic:"cubic-bezier(0.215, 0.610, 0.355, 1.000)",easeOutQuart:"cubic-bezier(0.165, 0.840, 0.440, 1.000)",easeOutQuint:"cubic-bezier(0.230, 1.000, 0.320, 1.000)",easeOutSine:"cubic-bezier(0.390, 0.575, 0.565, 1.000)",easeOutExpo:"cubic-bezier(0.190, 1.000, 0.220, 1.000)",
+      easeOutCirc:"cubic-bezier(0.075, 0.820, 0.165, 1.000)",easeOutBack:"cubic-bezier(0.175, 0.885, 0.320, 1.275)",easeInOutQuad:"cubic-bezier(0.455, 0.030, 0.515, 0.955)",easeInOutCubic:"cubic-bezier(0.645, 0.045, 0.355, 1.000)",easeInOutQuart:"cubic-bezier(0.770, 0.000, 0.175, 1.000)",easeInOutQuint:"cubic-bezier(0.860, 0.000, 0.070, 1.000)",easeInOutSine:"cubic-bezier(0.445, 0.050, 0.550, 0.950)",easeInOutExpo:"cubic-bezier(1.000, 0.000, 0.000, 1.000)",easeInOutCirc:"cubic-bezier(0.785, 0.135, 0.150, 0.860)",
+      easeInOutBack:"cubic-bezier(0.680, -0.550, 0.265, 1.550)"},y={},k=k[c.easing||"swing"]?k[c.easing||"swing"]:c.easing||"swing",e;for(e in a)if(-1===d.inArray(e,T)){var p=-1<d.inArray(e,I),m;var g=b,w=a[e],u=e,s=p&&!0!==a.avoidTransforms;if("d"==u)m=void 0;else if(M(g)){var f=U.exec(w);m="auto"===g.css(u)?0:g.css(u);m="string"==typeof m?H(m):m;"string"==typeof w&&H(w);var s=!0===s?0:m,t=g.is(":hidden"),v=g.translation();"left"==u&&(s=parseInt(m,10)+v.x);"right"==u&&(s=parseInt(m,10)+v.x);"top"==u&&
+      (s=parseInt(m,10)+v.y);"bottom"==u&&(s=parseInt(m,10)+v.y);!f&&"show"==w?(s=1,t&&g.css({display:R(g.context.tagName),opacity:0})):!f&&"hide"==w&&(s=0);f?(g=parseFloat(f[2]),f[1]&&(g=("-="===f[1]?-1:1)*g+parseInt(s,10)),m=g):m=s}else m=void 0;f=e;g=m;w=b;if(M(w)){u=-1<d.inArray(f,S);if(("width"==f||"height"==f||"opacity"==f)&&parseFloat(g)===parseFloat(w.css(f)))u=!1;f=u}else f=!1;if(f){var f=b,g=e,w=c.duration,u=k,p=p&&!0!==a.avoidTransforms,s=j,t=a.useTranslate3d,v=(v=f.data("jQe"))&&!B(v)?v:d.extend(!0,
+      {},W),A=m;if(-1<d.inArray(g,I)){var E=v.meta,C=H(f.css(g))||0,z=g+"_o",A=m-C;E[g]=A;E[z]="auto"==f.css(g)?0+A:C+A||0;v.meta=E;s&&0===A&&(A=0-E[z],E[g]=A,E[z]=0)}f.data("jQe",P(f,v,g,w,u,A,p,s,t))}else y[e]=a[e]}b.unbind("webkitTransitionEnd oTransitionEnd transitionend");if((e=b.data("jQe"))&&!B(e)&&!B(e.secondary)){n++;b.css(e.properties);var G=e.secondary;setTimeout(function(){b.bind("webkitTransitionEnd oTransitionEnd transitionend",l).css(G)})}else c.queue=!1;B(y)||(n++,J.apply(b,[y,{duration:c.duration,
+      easing:d.easing[c.easing]?c.easing:d.easing.swing?"swing":"linear",complete:q,queue:c.queue}]));return!0})};d.fn.animate.defaults={};d.fn.stop=function(a,b,p){if(!O)return K.apply(this,[a,b]);a&&this.queue([]);this.each(function(){var l=d(this),j=l.data("jQe");if(j&&!B(j)){var h,c={};if(b){if(c=j.secondary,!p&&void 0!==typeof j.meta.left_o||void 0!==typeof j.meta.top_o){c.left=void 0!==typeof j.meta.left_o?j.meta.left_o:"auto";c.top=void 0!==typeof j.meta.top_o?j.meta.top_o:"auto";for(h=r.length-
+      1;0<=h;h--)c[r[h]+"transform"]=""}}else if(!B(j.secondary)){var n=window.getComputedStyle(l[0],null);if(n)for(var q in j.secondary)if(j.secondary.hasOwnProperty(q)&&(q=q.replace(V,"-$1").toLowerCase(),c[q]=n.getPropertyValue(q),!p&&/matrix/i.test(c[q]))){h=c[q].replace(/^matrix\(/i,"").split(/, |\)$/g);c.left=parseFloat(h[4])+parseFloat(l.css("left"))+"px"||"auto";c.top=parseFloat(h[5])+parseFloat(l.css("top"))+"px"||"auto";for(h=r.length-1;0<=h;h--)c[r[h]+"transform"]=""}}l.unbind("webkitTransitionEnd oTransitionEnd transitionend");
+      l.css(j.original).css(c).data("jQe",null)}else K.apply(l,[a,b])});return this}})(jQuery,jQuery.fn.animate,jQuery.fn.stop);
+
+      //superslides js
+        (function(e,t){var n,r="superslides";n=function(n,r){this.options=t.extend({play:false,animation_speed:600,animation_easing:"swing",animation:"slide",inherit_width_from:e,inherit_height_from:e,pagination:true,hashchange:false,scrollable:true,elements:{preserve:".preserve",nav:".slides-navigation",container:".slides-container",pagination:".slides-pagination"}},r);var i=this,s=t("<div>",{"class":"slides-control"}),o=1;this.$el=t(n);this.$container=this.$el.find(this.options.elements.container);var u=function(){o=i._findMultiplier();i.$el.on("click",i.options.elements.nav+" a",function(e){e.preventDefault();i.stop();if(t(this).hasClass("next")){i.animate("next",function(){i.start()})}else{i.animate("prev",function(){i.start()})}});t(document).on("keyup",function(e){if(e.keyCode===37){i.animate("prev")}if(e.keyCode===39){i.animate("next")}});t(e).on("resize",function(){setTimeout(function(){var e=i.$container.children();i.width=i._findWidth();i.height=i._findHeight();e.css({width:i.width,left:i.width});i.css.containers();i.css.images()},10)});t(e).on("hashchange",function(){var e=i._parseHash(),t;if(e&&!isNaN(e)){t=i._upcomingSlide(e-1)}else{t=i._upcomingSlide(e)}if(t>=0&&t!==i.current){i.animate(t)}});i.pagination._events();i.start();return i};var a={containers:function(){if(i.init){i.$el.css({height:i.height});i.$control.css({width:i.width*o,left:-i.width});i.$container.css({})}else{t("body").css({margin:0});i.$el.css({position:"relative",overflow:"hidden",width:"100%",height:i.height});i.$control.css({position:"relative",transform:"translate3d(0)",height:"100%",width:i.width*o,left:-i.width});i.$container.css({display:"none",margin:"0",padding:"0",listStyle:"none",position:"relative",height:"100%"})}if(i.size()===1){i.$el.find(i.options.elements.nav).hide()}},images:function(){var e=i.$container.find("img").not(i.options.elements.preserve);e.removeAttr("width").removeAttr("height").css({"-webkit-backface-visibility":"hidden","-ms-interpolation-mode":"bicubic",position:"absolute",left:"0",top:"0","z-index":"-1","max-width":"none"});e.each(function(){var e=i.image._aspectRatio(this),n=this;if(!t.data(this,"processed")){var r=new Image;r.onload=function(){i.image._scale(n,e);i.image._center(n,e);t.data(n,"processed",true)};r.src=this.src}else{i.image._scale(n,e);i.image._center(n,e)}})},children:function(){var e=i.$container.children();if(e.is("img")){e.each(function(){if(t(this).is("img")){t(this).wrap("<div>");var e=t(this).attr("id");t(this).removeAttr("id");t(this).parent().attr("id",e)}});e=i.$container.children()}if(!i.init){e.css({display:"none",left:i.width*2})}e.css({position:"absolute",overflow:"hidden",height:"100%",width:i.width,top:0,zIndex:0})}};var f={slide:function(e,t){var n=i.$container.children(),r=n.eq(e.upcoming_slide);r.css({left:e.upcoming_position,display:"block"});i.$control.animate({left:e.offset},i.options.animation_speed,i.options.animation_easing,function(){if(i.size()>1){i.$control.css({left:-i.width});n.eq(e.upcoming_slide).css({left:i.width,zIndex:2});if(e.outgoing_slide>=0){n.eq(e.outgoing_slide).css({left:i.width,display:"none",zIndex:0})}}t()})},fade:function(e,t){var n=this,r=n.$container.children(),i=r.eq(e.outgoing_slide),s=r.eq(e.upcoming_slide);s.css({left:this.width,opacity:1,display:"block"});if(e.outgoing_slide>=0){i.animate({opacity:0},n.options.animation_speed,n.options.animation_easing,function(){if(n.size()>1){r.eq(e.upcoming_slide).css({zIndex:2});if(e.outgoing_slide>=0){r.eq(e.outgoing_slide).css({opacity:1,display:"none",zIndex:0})}}t()})}else{s.css({zIndex:2});t()}}};f=t.extend(f,t.fn.superslides.fx);var l={_centerY:function(e){var n=t(e);n.css({top:(i.height-n.height())/2})},_centerX:function(e){var n=t(e);n.css({left:(i.width-n.width())/2})},_center:function(e){i.image._centerX(e);i.image._centerY(e)},_aspectRatio:function(e){if(!e.naturalHeight&&!e.naturalWidth){var t=new Image;t.src=e.src;e.naturalHeight=t.height;e.naturalWidth=t.width}return e.naturalHeight/e.naturalWidth},_scale:function(e,n){n=n||i.image._aspectRatio(e);var r=i.height/i.width,s=t(e);if(r>n){s.css({height:i.height,width:i.height/n})}else{s.css({height:i.width*n,width:i.width})}}};var c={_setCurrent:function(e){if(!i.$pagination){return}var t=i.$pagination.children();t.removeClass("current");t.eq(e).addClass("current")},_addItem:function(e){var n=e+1,r=n,s=i.$container.children().eq(e),o=s.attr("id");if(o){r=o}var u=t("<a>",{href:"#"+r,text:r});u.appendTo(i.$pagination)},_setup:function(){if(!i.options.pagination||i.size()===1){return}var e=t("<nav>",{"class":i.options.elements.pagination.replace(/^\./,"")});i.$pagination=e.appendTo(i.$el);for(var n=0;n<i.size();n++){i.pagination._addItem(n)}},_events:function(){i.$el.on("click",i.options.elements.pagination+" a",function(e){e.preventDefault();var t=i._parseHash(this.hash),n=i._upcomingSlide(t-1);if(n!==i.current){i.animate(n,function(){i.start()})}})}};this.css=a;this.image=l;this.pagination=c;this.fx=f;this.animation=this.fx[this.options.animation];this.$control=this.$container.wrap(s).parent(".slides-control");i._findPositions();i.width=i._findWidth();i.height=i._findHeight();this.css.children();this.css.containers();this.css.images();this.pagination._setup();return u()};n.prototype={_findWidth:function(){return t(this.options.inherit_width_from).width()},_findHeight:function(){return t(this.options.inherit_height_from).height()},_findMultiplier:function(){return this.size()===1?1:3},_upcomingSlide:function(e){if(/next/.test(e)){return this._nextInDom()}else if(/prev/.test(e)){return this._prevInDom()}else if(/\d/.test(e)){return+e}else if(e&&/\w/.test(e)){var t=this._findSlideById(e);if(t>=0){return t}else{return 0}}else{return 0}},_findSlideById:function(e){return this.$container.find("#"+e).index()},_findPositions:function(e,t){t=t||this;if(e===undefined){e=-1}t.current=e;t.next=t._nextInDom();t.prev=t._prevInDom()},_nextInDom:function(){var e=this.current+1;if(e===this.size()){e=0}return e},_prevInDom:function(){var e=this.current-1;if(e<0){e=this.size()-1}return e},_parseHash:function(t){t=t||e.location.hash;t=t.replace(/^#/,"");if(t&&!isNaN(+t)){t=+t}return t},size:function(){return this.$container.children().length},destroy:function(){return this.$el.removeData()},update:function(){this.css.children();this.css.containers();this.css.images();this.pagination._addItem(this.size());this._findPositions(this.current);this.$el.trigger("updated.slides")},stop:function(){clearInterval(this.play_id);delete this.play_id;this.$el.trigger("stopped.slides")},start:function(){var n=this;if(n.options.hashchange){t(e).trigger("hashchange")}else{this.animate()}if(this.options.play){if(this.play_id){this.stop()}this.play_id=setInterval(function(){n.animate()},this.options.play)}this.$el.trigger("started.slides")},animate:function(t,n){var r=this,i={};if(this.animating){return}this.animating=true;if(t===undefined){t="next"}i.upcoming_slide=this._upcomingSlide(t);if(i.upcoming_slide>=this.size()){return}i.outgoing_slide=this.current;i.upcoming_position=this.width*2;i.offset=-i.upcoming_position;if(t==="prev"||t<i.outgoing_slide){i.upcoming_position=0;i.offset=0}if(r.size()>1){r.pagination._setCurrent(i.upcoming_slide)}if(r.options.hashchange){var s=i.upcoming_slide+1,o=r.$container.children(":eq("+i.upcoming_slide+")").attr("id");if(o){e.location.hash=o}else{e.location.hash=s}}r.$el.trigger("animating.slides",[i]);r.animation(i,function(){r._findPositions(i.upcoming_slide,r);if(typeof n==="function"){n()}r.animating=false;r.$el.trigger("animated.slides");if(!r.init){r.$el.trigger("init.slides");r.init=true;r.$container.fadeIn("fast")}})}};t.fn[r]=function(e,i){var s=[];this.each(function(){var o,u,a;o=t(this);u=o.data(r);a=typeof e==="object"&&e;if(!u){s=o.data(r,u=new n(this,a))}if(typeof e==="string"){s=u[e];if(typeof s==="function"){return s=s.call(u,i)}}});return s};t.fn[r].fx={}})(this,jQuery)
+
+    // $('.dots').click(function() {
+    //   $('.dots li a').addClass( 'current' );
+    //   return false;
+    // })
+
+
+  //my js
+      $('#slides').superslides({
+        hashchange: true,
+        inherit_height_from: "#slides"
+      });
+    });
+
+      /******************* START: PERSISTENT HEADER ********************/
+      function UpdateTableHeaders() {
+        $('.persist-area2').each(function() {
+           var el             = $(this),
+               offset         = el.offset(),
+               scrollTop      = $(window).scrollTop(),
+              floatingHeader = $('.floatingHeader', this);
+           if ((scrollTop > offset.top) && (scrollTop < offset.top + el.height())) {
+               floatingHeader.css({
+                'visibility': 'visible'
+               });
+           } else {
+               floatingHeader.css({'visibility': 'hidden'});
+           }
+        });
+      }
+      var clonedHeaderRow;
+      $('.persist-area2').each(function() {
+         clonedHeaderRow = $('.persist-header2', this);
+         clonedHeaderRow
+           .before(clonedHeaderRow.clone())
+           .css('width', clonedHeaderRow.width())
+           .addClass('floatingHeader');
+      });  
+      $(window).scroll(UpdateTableHeaders).trigger('scroll');
+      /******************* END: PERSISTENT HEADER ********************/
+
+      /******************* START: FADEIN FADEOUT IMAGES ********************/
+      var InfiniteRotator =  {
+          init: function () {
+              var itemInterval = 4000;
+              var fadeTime = 2000;
+              var numberOfItems = 2;
+              var currentItem = 0;
+
+              //show first item
+              $('.rotating_item2').eq(currentItem);
+              $('.rotating_caption').eq(currentItem);
+
+              //loop through the items
+              var infiniteLoop = setInterval(function(){
+                  $('.rotating_item2 img').eq(currentItem).fadeOut(fadeTime);
+                  $('.rotating_caption').eq(currentItem).fadeOut(fadeTime);
+                  if (currentItem === numberOfItems -1){
+                      currentItem = 0;
+                  } else {
+                      currentItem++;
+                  }
+                  $('.rotating_item2 img').eq(currentItem).fadeIn(fadeTime);
+                  $('.rotating_caption').eq(currentItem).removeClass('hide').fadeIn(fadeTime);
+              }, itemInterval);
+          }
+      };
+      InfiniteRotator.init();
+      /******************* END: FADEIN FADEOUT IMAGES ********************/
+
+      /******************* START: GOOGLE TRACKING ********************/
+      $('#drivenToSucceed2 a, #getInGear a, .youtube_slide a').click(function(e){
+        e.preventDefault();
+        var href = $(this).attr("href");
+        var title = $(this).attr("title");
+        var name = $(this).attr("name");
+        _gaq.push(
+            ['teamDetroit._trackEvent', 'onclick', 'photo', title ],
+            ['teamDetroit._trackEvent', 'start', 'video', name ],
+            ['teamDetroit._trackEvent', 'complete', 'video', name ]
+        );
+        window.open(href, '_blank');
+      });
+      /******************* END: GOOGLE TRACKING ********************/
+  });
+/******* END: window.onload ********/
+//Dual reporting of GA event tracking for Team Detroit
+      var _gaq = _gaq || [];
+      _gaq.push(
+        ['teamDetroit._setAccount', 'UA-43824554-3'],
+        ['teamDetroit._setDomainName', 'renttherunway.com'],
+        ['teamDetroit._trackPageview', '/renttherunway/home']);
+</script>
